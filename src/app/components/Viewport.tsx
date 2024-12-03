@@ -44,7 +44,7 @@ export function Viewport() {
     <p>loading...</p>
   ) : (
     <>
-      <Video ref={source} />
+      <Video ref={source} src="/video.mp4" />
       <Canvas>
         <ambientLight intensity={Math.PI / 2} />
         <spotLight

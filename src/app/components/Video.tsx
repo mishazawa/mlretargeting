@@ -18,7 +18,7 @@ export const Video = forwardRef<HTMLVideoElement, any>(function Video(
       {...props}
       style={{ display: "none" }}
     >
-      <source src="/video.mp4" type="video/mp4" />
+      <source src={props.src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );

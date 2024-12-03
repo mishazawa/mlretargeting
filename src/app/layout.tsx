@@ -15,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <Script src="/lib/ml5.js" strategy="beforeInteractive" />
+        <Script
+          src={process.env.REACT_APP_ML5_SRC}
+          strategy="beforeInteractive"
+        />
       </head>
       <body>{children}</body>
     </html>
